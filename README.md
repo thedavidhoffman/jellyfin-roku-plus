@@ -2,7 +2,7 @@
 
 <h1 align="center">Jellyfin for Roku Plus</h1>
 <p align="center">This is a forK of the official <strong>Jellyfin</strong> Roku client.</p>
-<p align="center" style="color:red; font-weight: bold">THE INTENTION OF THIS FORK IS TO MAKE A BETTER LOOKING ROKU APP FOR JELLYFIN. NOTHING HAS BEEN UPDATED BEYOND FORKING THE MASTER BRANCH FROM THE OFFICIAL REPO. GITHUB REQUIRES FORKS TO BE PUBLIC REPOSITORIES. IF I ACTUALLY SUCCEED IN THIS ENDEAVOR THIS README WILL BE UPDATED. DATE OF THIS COMMENT: 2/18/2026.</p>
+<p align="center">THE INTENTION OF THIS FORK IS TO MAKE A BETTER LOOKING ROKU APP FOR JELLYFIN. NOTHING HAS BEEN UPDATED BEYOND FORKING THE MASTER BRANCH FROM THE OFFICIAL REPO. GITHUB REQUIRES FORKS TO BE PUBLIC REPOSITORIES. IF I ACTUALLY SUCCEED IN THIS ENDEAVOR THIS README WILL BE UPDATED. DATE OF THIS COMMENT: 2/18/2026.</p>
 <p align="center">Navigate your Jellyfin library and watch, listen, and view your media.</p>
 <p align="center">Cool features include song lyric support, trickplay images, media segment support, downloading subtitles direct from your Roku, and more.</p>
 <h2 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h2>
