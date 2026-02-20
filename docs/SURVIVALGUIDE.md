@@ -44,15 +44,20 @@ The manifest file at the root of the project defines:
 - The Roku app splash screen
 - Other configuration options
 
-### Main.bs
-Serves as the "Main" entrypoint of a Roku app.
-It kickstarts the application and has a while loop that listens to the message port, and takes actions based on messages it receives.
+### Program flow
+The program flow is generally pretty easy to understand.
+
+`Main.bs -> MainEventHandler.bs -> ShowScenes.bs`
+
+1) `Main.bs` boostraps/initializes the app and starts a `while` loop listening to a message port. 
+2) When a message is received, depending on the message type, it triggers a specific event handler defined in `MainEventHandler.bs`
+3) A handler in `MainEventHandler.bs` will in turn will call a function in `ShowScenes.bs` which will load up a particular scene (aka component).
 
 ### MainActions.bs
 Common subroutines for handling actions such as onPlayButtonClicked, onTrailerButtonClicked.
 
-### MainEventHandler.bs
-Top level event handlers.
-
 ### ShowScenes.bs
-Renders scenes, aka UI pages/elements.
+
+#### CreateHomeGroup()
+Main screen after logging in. Shows the user's libraries.
+components/home

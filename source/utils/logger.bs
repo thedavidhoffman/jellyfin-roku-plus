@@ -83,6 +83,7 @@ end function
 ' getFormattedCurrentDateTime
 '------------------------------------------------------------------------------
 function getFormattedCurrentDateTime() as string
+
     dt = CreateObject("roDateTime")
 
     ' date parts
@@ -98,24 +99,29 @@ function getFormattedCurrentDateTime() as string
     ms = Right("000" + GetMilliseconds().ToStr(), 3)
 
     return month + "-" + day + " " + hour + ":" + minute + ":" + second + "." + ms
+
 end function
 
 '------------------------------------------------------------------------------
 ' pad2
 '------------------------------------------------------------------------------
 function pad2(value as integer) as string
+
     if value < 10
         return "0" + value.ToStr()
     else
         return value.ToStr()
     end if
+
 end function
 
 '------------------------------------------------------------------------------
 ' getMilliseconds
 '------------------------------------------------------------------------------
 function getMilliseconds() as integer
+
     ts = CreateObject("roTimespan")
     ts.Mark()
     return ts.TotalMilliseconds() mod 1000
+
 end function
